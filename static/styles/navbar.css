@@ -1,0 +1,56 @@
+.navbar {
+    display: flex;
+    background-color: rgb(61, 60, 60);
+}
+.nav-list {
+    display: flex;
+}
+
+.nav-list a {
+    display: block;
+    padding: 1em;
+    color: antiquewhite;
+    text-decoration: none;
+}
+.nav-list a:hover {
+    background-color: rgb(97, 96, 96);
+
+}
+.nav-btn {
+    display: none;
+}
+
+.navbar>img {
+    height: 2.5rem;
+    padding-top: 7px;
+}
+
+@media (max-width:1000px) {
+    .nav-btn {
+        font-size: 2em;
+        padding-inline: 10px;
+        padding-bottom: 3px;
+        background-color: rgb(61, 60, 60);
+        border: none;
+        color: antiquewhite;
+        display: block;
+        cursor: pointer;
+
+    
+    }
+    .nav-list {
+        display: none;
+    }
+    .drop:hover .nav-list {
+        display: block;
+        position: absolute;
+        right: 1px;
+        background-color: rgb(61, 60, 60);
+    }
+    .navbar {
+        justify-content: space-between;
+    }
+    .nav-btn:hover {
+        background-color: rgb(97, 96, 96);
+    }
+}
